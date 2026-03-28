@@ -7,76 +7,76 @@ function planetHandler(planetName) {
 
     switch (planetName) {
         case "mercury":
-            topText = `Нарнаас: 57.91 сая км <br/>  Диаметр: 4,880 км <br/>
-            Дундаж температур: -173 °C-аас 427 °C хүртэл <br/>
-            Эзлэхүүн: 6.083x10^10 км^3 <br/>
-            Масс: 3.3022x10^23 кг <br/>
-            Экваторын гадаргуугийн таталцал: 3.7 м/с^2 <br/>
-            Сар: Байхгүй <br/>`;
-            bottomText = `Буд гариг нь эртний Грекчүүдийн үеэс хүмүүс мэддэг байсан бөгөөд түүнийг элч бурхан Гермесийн нэрээр нэрлэжээ. 20-р зуунд сансрын хөлгүүд Буд гаригийг ойроос үзэж, судлах боломжтой болсон. Буд гариг нь наранд хамгийн ойр байдаг гариг бөгөөд нарны аймгийн хамгийн жижиг гариг юм.`;
+            topText = `Distance from Sun: 57.91 million km <br/> Diameter: 4,880 km <br/>
+            Average Temperature: -173 °C to 427 °C <br/>
+            Volume: 6.083×10^10 km³ <br/>
+            Mass: 3.3022×10^23 kg <br/>
+            Equatorial Surface Gravity: 3.7 m/s² <br/>
+            Moons: None <br/>`;
+            bottomText = `Mercury has been known since ancient Greek times, when it was named after the messenger god Hermes. In the 20th century, spacecraft made it possible to observe and study Mercury up close. Mercury is the closest planet to the Sun and the smallest planet in the solar system.`;
             bgURL += "mercury.png";
                 break;
         case "venus":
-            topText = `Нарнаас хол зай: 108.2 сая км <br/>
-            Диаметр: 12,104 км <br/>
-            Дундаж температур: 462 °C <br/>
-            Сар: Байхгүй <br/>
-            Сонирхолтой баримт: Сугар гариг нь дулааныг барьдаг нүүрстөрөгчийн давхар ислийн зузаан уур амьсгалаараа манай нарны аймгийн хамгийн халуун гариг юм. <br/>`;
-            bottomText = "Сугар гаригийг эрт дээр үеэс мэддэг байсан бөгөөд Ромын хайр ба гоо үзэсгэлэнгийн дарь эхийн нэрээр нэрлэгдсэн. 20-р зуунд Сугар гаригийн агаар мандал, гадаргууг судлахын тулд сансрын хөлөг илгээж байжээ.";
+            topText = `Distance from Sun: 108.2 million km <br/>
+            Diameter: 12,104 km <br/>
+            Average Temperature: 462 °C <br/>
+            Moons: None <br/>
+            Fun Fact: Venus is the hottest planet in our solar system due to its thick carbon dioxide atmosphere that traps heat. <br/>`;
+            bottomText = "Venus has been known since ancient times and was named after the Roman goddess of love and beauty. In the 20th century, spacecraft were sent to study Venus's atmosphere and surface.";
             bgURL += "venus.png";
             break;
         case "earth":
-            topText = `Нарнаас хол зай: 149.6 сая км <br/>
-            Диаметр: 12,742 км <br/>
-            Дундаж температур: 14 °C <br/>
-            Сар: 1 (Сар) <br/>
-            Сонирхолтой баримт: Дэлхий бол манай нарны аймгийн цорын ганц амьдралтай гариг юм. <br/>`;
-            bottomText = "Дэлхийг бид оршин тогтносноос хойш мэддэг. Харин 20-р зуунд шинжлэх ухааны аргаар уг гарагийг гүнзгий судалж эхэлсэн.";
+            topText = `Distance from Sun: 149.6 million km <br/>
+            Diameter: 12,742 km <br/>
+            Average Temperature: 14 °C <br/>
+            Moons: 1 (The Moon) <br/>
+            Fun Fact: Earth is the only known planet in our solar system that supports life. <br/>`;
+            bottomText = "Earth has been known to us since the beginning of human existence. However, it was only in the 20th century that it began to be studied in depth using scientific methods.";
             bgURL += "earth.png";
             break;
         case "mars":
-            topText = `Нарнаас хол зай: 227.9 сая км <br/>
-            Диаметр: 6,779 км <br/>
-            Дундаж температур: -87 хэмээс -5 хэм хүртэл <br/>
-            Сар: 2 (Фобос ба Деймос) <br/>
-            Сонирхолтой баримт: Ангараг гаригт нарны аймгийн хамгийн том галт уул болох Олимп Монс, мөн хамгийн гүн хавцал болох Валлес Маринерис байдаг. <br/>`;
-            bottomText = "Ангараг гарагийг хүн төрөлхтөн олон мянган жилийн өмнөөс мэддэг байсан ба Ромын дайны бурхны нэрээр нэрлэсэн. 20-р зуунд Ангараг гараг руу сансрын хөлөг илгээж, түүний гадаргуу, агаар мандал, өнгөрсөн болон одоо байгаа амьдралын шинж тэмдгүүдийг судалсан байдаг.";
+            topText = `Distance from Sun: 227.9 million km <br/>
+            Diameter: 6,779 km <br/>
+            Average Temperature: -87 °C to -5 °C <br/>
+            Moons: 2 (Phobos and Deimos) <br/>
+            Fun Fact: Mars is home to the tallest volcano in the solar system, Olympus Mons, as well as the deepest canyon, Valles Marineris. <br/>`;
+            bottomText = "Mars has been known to humanity for thousands of years and was named after the Roman god of war. In the 20th century, spacecraft were sent to Mars to study its surface, atmosphere, and signs of past and present life.";
             bgURL += "mars.png";
             break;
         case "jupiter":
-            topText = `Нарнаас хол зай: 778.5 сая км <br/>
-            Диаметр: 139,822 км <br/>
-            Дундаж температур: -145 °C <br/>
-            Сар: 79 (Галилийн дөрвөн том сарыг оруулаад: Ио, Европ, Ганимед, Каллисто) <br/>
-            Сонирхолтой баримт: Бархасбадь бол манай нарны аймгийн хамгийн том гараг бөгөөд нарны салхины тоосонцорыг барьж, хүчтэй цацрагийн бүс үүсгэдэг хүчтэй соронзон оронтой гариг юм. <br/>`;
-            bottomText = "Бархасбадь гарагийг эрт дээр үеэс мэддэг байсан бөгөөд Ромын домог зүйд бурхдын хааны нэрээр нэрлэгдсэн байдаг. 20-р зуунд Бархасбадь гаригт агаар мандал, соронзон орон болон дагуулыг нь судлахаар сансрын хөлөг илгээсэн.";
+            topText = `Distance from Sun: 778.5 million km <br/>
+            Diameter: 139,822 km <br/>
+            Average Temperature: -145 °C <br/>
+            Moons: 79 (including the four large Galilean moons: Io, Europa, Ganymede, Callisto) <br/>
+            Fun Fact: Jupiter is the largest planet in our solar system and has a powerful magnetic field that captures solar wind particles, creating intense radiation belts. <br/>`;
+            bottomText = "Jupiter has been known since ancient times and was named after the king of the gods in Roman mythology. In the 20th century, spacecraft were sent to study Jupiter's atmosphere, magnetic field, and moons.";
             bgURL += "jupiter.png";
             break;
         case "saturn":
-            topText = `Нарнаас хол зай: 1.43 тэрбум км <br/>
-            Диаметр: 116,460 км <br/>
-            Дундаж температур: -178 °C <br/>
-            Сар: 82 (хамгийн том нь Титан) <br/>
-            Сонирхолтой баримт: Санчир гариг нь мөс болон түүний хог хаягдлаас тогтсон үзэсгэлэнтэй цагиргуудаараа алдартай. <br/>`;
-            bottomText = "Санчир гаригийг хүн төрөлхтөн эрт дээр үеэс мэддэг байсан ба Ромын газар тариалангийн бурхны нэрээр нэрлэжээ. 20-р зуунд Санчир гаригийн цагираг, агаар мандал, сарыг судлахын тулд сансрын хөлөг илгээж байсан.";
+            topText = `Distance from Sun: 1.43 billion km <br/>
+            Diameter: 116,460 km <br/>
+            Average Temperature: -178 °C <br/>
+            Moons: 82 (the largest being Titan) <br/>
+            Fun Fact: Saturn is famous for its spectacular rings made of ice and debris. <br/>`;
+            bottomText = "Saturn has been known to humanity since ancient times and was named after the Roman god of agriculture. In the 20th century, spacecraft were sent to study Saturn's rings, atmosphere, and moons.";
             bgURL += "saturn.png";
             break;
         case "uranus":
-            topText = `Нарнаас хол зай: 2.87 тэрбум км <br/>
-            Диаметр: 50,724 км <br/>
-            Дундаж температур: -197 °C <br/>
-            Сар: 27 <br/>
-            Сонирхолтой баримт: Тэнгэрийн ван гариг нь түүхийн эхэн үед ямар нэг том биеттэй мөргөлдсөний улмаас хажуу тийшээ эргэлддэг болсон. <br/>`;
-            bottomText = "Тэнгэрийн ваныг 1781 онд Британийн одон орон судлаач Уильям Хершель нээжээ. Энэ бол дурангаар нээсэн анхны гариг юм. 20-р зуунд Тэнгэрийн ван гариг руу сансрын хөлөг илгээж, түүний агаар мандал, сарыг судалжээ.";
+            topText = `Distance from Sun: 2.87 billion km <br/>
+            Diameter: 50,724 km <br/>
+            Average Temperature: -197 °C <br/>
+            Moons: 27 <br/>
+            Fun Fact: Uranus rotates on its side, likely due to a collision with a large body early in its history. <br/>`;
+            bottomText = "Uranus was discovered in 1781 by British astronomer William Herschel. It was the first planet discovered using a telescope. In the 20th century, spacecraft were sent to Uranus to study its atmosphere and moons.";
             bgURL += "uranus.png";
             break;
         case "neptune":
-            topText = `Нарнаас хол зай: 4.5 тэрбум км <br/>
-            Диаметр: 49,244 км <br/>
-            Дундаж температур: -201°C <br/>
-            Сар: 14 (хамгийн том нь Тритон гэж нэрлэгддэг) <br/>
-            Сонирхолтой баримт: Далай ван бол манай нарны аймгийн хамгийн их салхитай гариг бөгөөд салхины хурд 2100 км/цаг хүрдэг. <br/>`;
-            bottomText = "Далай ваныг 1846 онд Францын математикч Урбайн Ле Верьер, Британийн одон орон судлаач Жон Куш Адамс нар нээжээ. Энэ бол ажиглалтын аргаар бус математик тооцоогоор нээсэн анхны гараг юм. 20-р зуунд Нептун гариг руу сансрын хөлөг илгээж, түүний агаар мандал, сарыг судлак байжээ.";
+            topText = `Distance from Sun: 4.5 billion km <br/>
+            Diameter: 49,244 km <br/>
+            Average Temperature: -201 °C <br/>
+            Moons: 14 (the largest being Triton) <br/>
+            Fun Fact: Neptune is the windiest planet in our solar system, with wind speeds reaching up to 2,100 km/h. <br/>`;
+            bottomText = "Neptune was discovered in 1846 by French mathematician Urbain Le Verrier and British astronomer John Couch Adams. It was the first planet discovered through mathematical calculations rather than observation. In the 20th century, spacecraft were sent to Neptune to study its atmosphere and moons.";
             bgURL += "neptune.png";
             break;
     }
