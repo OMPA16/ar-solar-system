@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Solar System, NUM Astronomy">
+    <meta name="description" content="Interactive 3D Solar System — Explore planets, learn facts, and navigate through space.">
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <link rel="stylesheet" href="index.css">
-    <title>Solar System</title>
+    <link rel="icon" href="earth.svg" type="image/svg+xml">
+    <title>Solar System Explorer</title>
 </head>
 <body>
-    <header class="header" >
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">☰</label>
-            <ul class="nav_list">
-                <li class="navItem" class="home"><a class="nav_link"><img src="earth.svg" alt="Earth" onclick="clearPlanets()" width="40" height="40"></a></li>
-                <li class="navItem" onclick="planetHandler('mercury')"><a class="nav_link">Mercury</a></li>
-                <li class="navItem" onclick="planetHandler('venus')"><a class="nav_link">Venus</a></li>
-                <li class="navItem" onclick="planetHandler('earth')"><a class="nav_link">Earth</a></li>
-                <li class="navItem" onclick="planetHandler('mars')"><a class="nav_link">Mars</a></li>
-                <li class="navItem" onclick="planetHandler('jupiter')"><a class="nav_link">Jupiter</a></li>
-                <li class="navItem" onclick="planetHandler('saturn')"><a class="nav_link">Saturn</a></li>
-                <li class="navItem" onclick="planetHandler('uranus')"><a class="nav_link">Uranus</a></li>
-                <li class="navItem" onclick="planetHandler('neptune')"><a class="nav_link">Neptune</a></li>
-            </ul>
-        </div>
+    <header class="header">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul class="nav_list">
+            <li class="navItem home" id="nav-home">
+                <a class="nav_link" onclick="clearPlanets()">
+                    <img src="earth.svg" alt="Home" width="32" height="32">
+                </a>
+            </li>
+            <li class="navItem" id="nav-mercury" onclick="planetHandler('mercury')"><a class="nav_link">Mercury</a></li>
+            <li class="navItem" id="nav-venus" onclick="planetHandler('venus')"><a class="nav_link">Venus</a></li>
+            <li class="navItem" id="nav-earth" onclick="planetHandler('earth')"><a class="nav_link">Earth</a></li>
+            <li class="navItem" id="nav-mars" onclick="planetHandler('mars')"><a class="nav_link">Mars</a></li>
+            <li class="navItem" id="nav-jupiter" onclick="planetHandler('jupiter')"><a class="nav_link">Jupiter</a></li>
+            <li class="navItem" id="nav-saturn" onclick="planetHandler('saturn')"><a class="nav_link">Saturn</a></li>
+            <li class="navItem" id="nav-uranus" onclick="planetHandler('uranus')"><a class="nav_link">Uranus</a></li>
+            <li class="navItem" id="nav-neptune" onclick="planetHandler('neptune')"><a class="nav_link">Neptune</a></li>
+        </ul>
     </header>
+
+    <!-- Close button for info overlay -->
+    <button id="closeBtn" onclick="clearPlanets()" aria-label="Close planet info">✕</button>
+
     <div id="contentContainer">
         <div id="bottomText"></div>
         <div id="pictureDiv"></div>
         <div id="topText"></div>
     </div>
+
+    <!-- Keyboard shortcuts hint (desktop) -->
+    <div id="keyHint">
+        <span><span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span> Move</span>
+        <span><span class="key">Space</span> Up</span>
+        <span><span class="key">C</span> Down</span>
+        <span><span class="key">T</span> Top View</span>
+        <span><span class="key">Y</span> Reset</span>
+    </div>
+
     <a-scene>
         <a-entity camera look-controls wasd-controls="acceleration:400" fly="true" position="0 10 0">
         </a-entity>
@@ -48,7 +67,6 @@
             <img id="venus" src="jpg/venus1.jpg">
         </a-assests>
         <a-sphere position="-550 1.25 -15" radius="100.5" animation="property: rotation; to: 0 360 0; fill: backwards; dur: 30000; loop: true; easing: linear; segment-height: 56;"  material="src: #sun; shader: flat; " sound="src: url(sounds/sun.mp3); autoplay: true; loop: true; volume: 75;" >
-            <!-- light="type: point; color: white; intensity: 2.5" -->
             <!-- Mercury ring -->
             <a-ring material="shader: flat; opacity: 0.5; color: white;" segments-theta="512" radius-inner="500" radius-outer="500.1" side="double" rotation="90 0 0"></a-ring>
             <!-- Venus ring -->
@@ -117,7 +135,7 @@
         </a-entity>
         <!-- Background (Galaxy) -->
         <a-sky src="#galaxy" radius="5000"></a-sky>
-    </a-schene>
+    </a-scene>
     
     <script src="script.js" defer></script>
 </body>
